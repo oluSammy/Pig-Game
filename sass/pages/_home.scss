@@ -1,0 +1,18 @@
+.page-box{
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right:20%;
+}
+.btn-start{
+    margin-top: 1% ;
+    margin-left: 25%;
+    margin-right: 30%;
+
+    & a{
+        color: $color-white;
+        text-decoration: none; 
+        background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+}

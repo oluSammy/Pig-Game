@@ -1,0 +1,35 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html{
+    font-size: 62.5%;
+
+     
+    @include respond(tab-land){
+        font-size: 50%; 
+    }
+    @include respond(tab-port){
+         font-size: 40%;
+    }
+    @include respond(phone){
+        font-size: 30%;   
+    }
+    @include respond(small-phone){
+        font-size: 20%;   
+    }
+}
+body{
+    background-image: linear-gradient(to right, $color-grad-1 0%, $color-grad-2 100%);
+    background-size: cover;
+    background-position: center; 
+    font-family: "noto";   
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 1.7;
+    // position: relative;
+} 

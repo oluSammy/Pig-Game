@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,500,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/dice-icon-3.jpg" type="image/x-icon">
+</head>
+<body>
+        <div class="btn-rule">
+                <a href="#popup" >Game Rules</a>
+            </div>
+    <div class="container clearfix">
+        <div class="player-0 active">    
+            <div class="player-name name" id="name-0">Player 1</div>
+            <div class="score" id="score-0">19</div>
+            <div class="current">
+                <div class="current-label">Current</div>
+                <div class="current-score" id="current-0">10</div>
+            </div>
+        </div>   
+        <div class="player-1">
+            <div class="player-name name" id="name-1">Player 2</div>
+            <div class="score" id="score-1">200</div>
+            <div class="current"> 
+                <div class="current-label">Current</div>
+                <div class="current-score" id="current-1">12</div>
+            </div>
+        </div>
+        <div class="button btn-new">New Game</div>
+        <div class="button btn-roll">Roll Dice</div>
+        <div class="button btn-hold">Hold</div>
+        <img src="img/dice-6.png" class="dice" alt="dice">
+        <img src="img/dice-6.png" class="dice2" alt="dice">
+
+        <div class="gif test">
+                <iframe src="https://giphy.com/embed/5T0klia2LqiIPM87lt" class="giphy-embed gif-frame" allowFullScreen ></iframe>
+        </div>
+
+
+        <input type="text" name="final" id="final" class="final" placeholder="Final Score">
+    </div>
+    <div class="pop-up" id="popup">
+            <div class="pop-up__content">
+                <a href="#home" class="pop-up__close">&times;</a>
+                <h3 class="pop-up__header">Game Rules</h3>
+                <div class="rules">
+                    <ul>
+                        <li><p>The game has 2 players, playing in rounds</p> </li>
+                        <li><p>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score</p></li>
+                        <li><p>BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</p></li>
+                        <li><p>The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn</p> </li>
+                        <li><p>The first player to reach the final score on GLOBAL score wins the game</p> </li>
+                        <li><p>If the final Score is not set, the first player to reach 100 on GLOBAL Score wins the game</p> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
